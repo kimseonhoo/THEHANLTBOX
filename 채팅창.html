@@ -1,13 +1,175 @@
-<!--Start of Tawk.to Script-->
-<script type="text/javascript">
-var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
-(function(){
-var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
-s1.async=true;
-s1.src='https://embed.tawk.to/5d2d6805bfcb827ab0cbf66f/default';
-s1.charset='UTF-8';
-s1.setAttribute('crossorigin','*');
-s0.parentNode.insertBefore(s1,s0);
-})();
-</script>
-<!--End of Tawk.to Script-->
+<!DOCTYPE html>
+<html lang="ko">
+
+<form action="http://mholic.co.kr/" method="get|post"></form>
+
+
+
+<form>
+
+    사용자 : <br><input type="text" name="username"><br>
+
+    비밀번호 : <br><input type="password" name="password">
+
+</form>
+
+<textarea name="message" rows="5" cols="30">
+
+    여기에 적으세요.
+
+</textarea>
+
+<button type="button" onclick="alert('버튼을 클릭하셨군요!')">
+
+    버튼을 눌러주세요.
+
+</button>
+
+<form action="/examples/media/request.php">
+
+<link rel="stylesheet" href="/examples/media/expand_style.css">
+
+</form>
+
+HTML  : <img src="alternative.png" />
+
+XHTML : <img src="alternative.png" alt="explanation" />
+
+
+
+<head>
+
+
+	<meta charset="UTF-8">
+	<title>HTML Layouts</title>
+	<style>
+		header {
+			background-color:lightgrey;
+			height:100px;
+		}
+		nav {
+			background-color:#339999;
+			color:white;
+			width:200px;
+			height:300px;
+			float:left;
+		}
+		section {
+			width:200px;
+			text-align:left;
+			float:left;
+			padding:10px;
+		}
+		footer {
+			background-color:#FFCC00;
+			height:100px;
+			clear:both;
+		}
+		header, nav, section, footer { text-align:center; }
+		header, footer { line-height:100px; }
+		nav, section { line-height:240px; }
+	</style>
+</head>
+
+<body>
+
+	<h1>HTML5 레이아웃</h1>
+	<header>
+		<h2><form action="/examples/media/request.php">
+
+        검색 :
+
+
+        <input type="text" name="search">
+
+        <button type="button" onclick="alert('버튼을 클릭하셨군요!')">
+
+            버튼을 눌러주세요.
+
+        </button>
+
+    </form></h2>
+	</header>
+	<nav>
+
+		<h4>분류<select name="fruit">
+
+    <option value="apple"> 행복
+
+    <option value="orange" selected> 분노
+
+    <option value="strawberry"> 생각없음
+
+    <option value="peach"> 사랑
+
+</select></h4>
+
+	</nav>
+	<section>
+		<p>SECTION 영역</p>
+	</section>
+	<footer>
+		<h2>FOOTER 영역</h2>
+	</footer>
+
+  <form action="/examples/media/request.php">
+
+      <fieldset>
+
+          <legend>입력 양식</legend>
+
+          이름 : <br>
+
+          <input type="text" name="username"><br>
+
+          이메일 : <br>
+
+          <input type="text" name="email"><br><br>
+
+          <input type="submit" value="전송">
+
+      </fieldset>
+
+  </form>
+
+</body>
+
+</html>
+
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+	<meta charset="UTF-8">
+	<title>HTML5 Multimedia Canvas</title>
+</head>
+
+
+
+</html>
+
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+	<meta charset="UTF-8">
+	<title>HTML5 Multimedia Canvas</title>
+</head>
+
+<body>
+
+	<h1>canvas 요소에 텍스트 그리기</h1>
+
+	<canvas id="drawCanvas" width="300px" height="200px" style="border: 1px solid #993300">
+		이 문장은 사용자의 웹 브라우저가 canvas 요소를 지원하지 않을 때 나타납니다!
+	</canvas>
+
+	<script>
+		var paper = document.getElementById("drawCanvas");
+		var context = paper.getContext("2d");
+		context.font = "40px Arial";
+		context.fillText("CANVAS", 50, 90);
+		context.strokeText("HTML5", 80, 150);
+	</script>
+
+</body>
